@@ -33,6 +33,8 @@ namespace Jay
         void Movement()//移動系統
         {
             float horizontalmove;
+            transform.Translate(Vector2.right * Time.deltaTime * 2f);
+            
             horizontalmove = Input.GetAxis("Horizontal");//取得水平按鍵
 
             //移動判斷
