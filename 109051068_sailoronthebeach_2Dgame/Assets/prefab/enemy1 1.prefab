@@ -168,7 +168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabshoot: {fileID: 3796316050535947996, guid: 7f84d7a72dc12b945b2e1a89ef775152, type: 3}
   pointspawn: {fileID: 6299391376088996983}
-  interval: 1.5
+  interval: 0.5
 --- !u!114 &182972863
 MonoBehaviour:
   m_ObjectHideFlags: 0
