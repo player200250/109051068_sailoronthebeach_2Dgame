@@ -9,5 +9,6 @@ public class canmerafollow : MonoBehaviour
     {
         //把此程式的位置參照 player遊戲物件的位置
         transform.position = player.transform.position + offset;
+
     }
 }
