@@ -1,4 +1,4 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace Jay 
@@ -7,7 +7,7 @@ namespace Jay
     {
         public void PlaygGame()
         {
-            //¥Dµæ³æ³õ´º±±¨î
+            //ä¸»èœå–®å ´æ™¯æ§åˆ¶
             SceneManager.LoadScene(SceneManager.GetActiveScene() .buildIndex+1);
         }
     }

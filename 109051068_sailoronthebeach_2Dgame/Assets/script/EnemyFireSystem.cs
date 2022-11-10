@@ -1,20 +1,20 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 namespace Jay 
 {
     /// <summary>
-    /// ¼Ä¤Hµo®g¨t²Î
+    /// æ•µäººç™¼å°„ç³»çµ±
     /// </summary>
     public class EnemyFireSystem : FiresSystemBase
     {
-        [SerializeField, Header("¥Í¦¨¤l¼u¶¡¹j"), Range(0, 50)]
+        [SerializeField, Header("ç”Ÿæˆå­å½ˆé–“éš”"), Range(0, 50)]
         private float interval = 1.5f;
         private void Awake()
         {
-            //©I¥s¤èªk
+            //å‘¼å«æ–¹æ³•
             //SpwanShoot();
 
-            //©µ¿ğ­«½Æ©I¥s("¤èªk¦WºÙ", ©µ¿ğ®É¶¡ ,­«½ÆÀW²v)
+            //å»¶é²é‡è¤‡å‘¼å«("æ–¹æ³•åç¨±", å»¶é²æ™‚é–“ ,é‡è¤‡é »ç‡)
             InvokeRepeating("SpwanShoot", 5, interval);
         }
     }

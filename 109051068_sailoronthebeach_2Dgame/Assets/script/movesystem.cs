@@ -1,18 +1,18 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 namespace Jay
 {
     ///<summery>
-    ///¼Ä¤H²¾°Ê¨t²Î
+    ///æ•µäººç§»å‹•ç³»çµ±
     ///</summery>>
     public class movesystem : MonoBehaviour
     {
-        [SerializeField, Header("²¾°Ê³t«×"), Range(-10, 0)]
+        [SerializeField, Header("ç§»å‹•é€Ÿåº¦"), Range(-10, 0)]
         public float speed = 1.5f;
 
         void Update()
         {
-            transform.Translate(Vector2.left * Time.deltaTime * 2f);//¦Û°Ê¦V¥ª²¾°Ê
+            transform.Translate(Vector2.left * Time.deltaTime * 2f);//è‡ªå‹•å‘å·¦ç§»å‹•
         }
     }
 }

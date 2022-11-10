@@ -1,10 +1,10 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 
 namespace Jay
 {
     /// <summary>
-    /// ¬Û¾÷¸òÀHª±®a²¾°Ê
+    /// ç›¸æ©Ÿè·Ÿéš¨ç©å®¶ç§»å‹•
     /// </summary>
 
     public class canmerafollow : MonoBehaviour
@@ -14,7 +14,7 @@ namespace Jay
 
         void Update()
         {
-            //§â¦¹µ{¦¡ªº¦ì¸m°Ñ·Ó player¹CÀ¸ª«¥óªº¦ì¸m
+            //æŠŠæ­¤ç¨‹å¼çš„ä½ç½®åƒç…§ playeréŠæˆ²ç‰©ä»¶çš„ä½ç½®
             transform.position = player.transform.position + offset;
 
         }

@@ -1,10 +1,10 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 namespace Jay 
 {
 
     /// <summary>
-    /// ª±®aµo®g¨t²Î
+    /// çŽ©å®¶ç™¼å°„ç³»çµ±
     /// </summary>
     public class PlayerFireSystem : FiresSystemBase
     {

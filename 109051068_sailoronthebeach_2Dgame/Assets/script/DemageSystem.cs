@@ -1,42 +1,42 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 
 namespace Jay
  {
     ///<summery>
-    ///¶Ë®`¨t²Î
+    ///å‚·å®³ç³»çµ±
     ///</summery>>
     public class DemageSystem : MonoBehaviour
     {
-        [SerializeField, Header("Ãz¬µ¹w»sª«")]
+        [SerializeField, Header("çˆ†ç‚¸é è£½ç‰©")]
         private GameObject prefabExplosion;
-        [SerializeField, Header("¸I¨ì·|Ãz¬µªº¦WºÙ")]
+        [SerializeField, Header("ç¢°åˆ°æœƒçˆ†ç‚¸çš„åç¨±")]
         private string nameTarget;
 
-        //¸I¼²¶}©l®É°õ¦æ¤@¦¸
+        //ç¢°æ’é–‹å§‹æ™‚åŸ·è¡Œä¸€æ¬¡
         private void OnCollisionEnter2D(Collision2D collision)
         {
             print(collision.gameObject.name);
-            // ¦pªG¸I¨ìªºª«¥ó¦WºÙ ¥]§t nameTarget ´NÃz¬µ§R°£
+            // å¦‚æœç¢°åˆ°çš„ç‰©ä»¶åç¨± åŒ…å« nameTarget å°±çˆ†ç‚¸åˆªé™¤
 
 
             if (collision.gameObject.name.Contains(nameTarget))
             {
-                // ¥Í¦¨Ãz¬µª« ®y¼Ğ»P¨¤«× ¸ò¦¹ª«¥ó¬Û¦P
+                // ç”Ÿæˆçˆ†ç‚¸ç‰© åº§æ¨™èˆ‡è§’åº¦ è·Ÿæ­¤ç‰©ä»¶ç›¸åŒ
                 Instantiate(prefabExplosion, transform.position, transform.rotation);
 
-                //§R°£ Destroy
-                // ¦¹ª«¥ó gameObject
+                //åˆªé™¤ Destroy
+                // æ­¤ç‰©ä»¶ gameObject
                 Destroy(gameObject);
              }
 
     }
-        //¸I¼²Â÷¶}®É°õ¦æ¤@¦¸
+        //ç¢°æ’é›¢é–‹æ™‚åŸ·è¡Œä¸€æ¬¡
         private void OnCollisionExit2D(Collision2D collision)
         {
 
         }
-        //¸I¼²®É«ùÄò°õ¦æ
+        //ç¢°æ’æ™‚æŒçºŒåŸ·è¡Œ
         private void OnCollisionStay2D(Collision2D collision)
         {
 

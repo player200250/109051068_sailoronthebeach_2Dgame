@@ -1,23 +1,23 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 namespace Jay
 {
     /// <summary>
-    /// ª±®a²¾°Ê¨t²Î
+    /// ç©å®¶ç§»å‹•ç³»çµ±
     /// </summary>
     public class playercontroller : MonoBehaviour
     {
-        [Header("¨ú±oª±®a¿ûÅé")]
+        [Header("å–å¾—ç©å®¶é‹¼é«”")]
         public Rigidbody2D rb;
-        [Header("¨¤¦â«e«á²¾°Ê³t«×"),Range(0,20)]
+        [Header("è§’è‰²å‰å¾Œç§»å‹•é€Ÿåº¦"),Range(0,20)]
         public float speed =10f;
-        [Header("¨¤¦â¸õÅD¤O¹D"), Range(0, 1000)]
+        [Header("è§’è‰²è·³èºåŠ›é“"), Range(0, 1000)]
         public float jumpforce =400f;
 
 
         void Update()
         {
-            //¨¤¦â¸õÅD
+            //è§’è‰²è·³èº
             if (Input.GetButtonDown("Jump"))
             {
                 rb.velocity = new Vector2(rb.velocity.x, jumpforce * Time.fixedDeltaTime);
@@ -25,22 +25,22 @@ namespace Jay
         }
         private void FixedUpdate()
         {
-            Movement();//©I¥s²¾°Ê¨t²Î
+            Movement();//å‘¼å«ç§»å‹•ç³»çµ±
 
 
         }
 
-        void Movement()//²¾°Ê¨t²Î
+        void Movement()//ç§»å‹•ç³»çµ±
         {
             float horizontalmove;
             transform.Translate(Vector2.right * Time.deltaTime * 2f);
             
-            horizontalmove = Input.GetAxis("Horizontal");//¨ú±o¤ô¥­«öÁä
+            horizontalmove = Input.GetAxis("Horizontal");//å–å¾—æ°´å¹³æŒ‰éµ
 
-            //²¾°Ê§PÂ_
+            //ç§»å‹•åˆ¤æ–·
             if (horizontalmove != 0)
             {
-                rb.velocity = new Vector2(horizontalmove * speed, rb.velocity.y);//¾ŞÁa¿ûÅé¤ô¥­²¾°Ê
+                rb.velocity = new Vector2(horizontalmove * speed, rb.velocity.y);//æ“ç¸±é‹¼é«”æ°´å¹³ç§»å‹•
             }
         }
     }
