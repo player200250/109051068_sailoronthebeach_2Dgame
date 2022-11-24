@@ -14,8 +14,17 @@ namespace Jay
             //呼叫方法
             //SpwanShoot();
 
+            
+        }
+
+        private void OnBecameVisible()
+        {
             //延遲重複呼叫("方法名稱", 延遲時間 ,重複頻率)
             InvokeRepeating("SpwanShoot", 5, interval);
+        }
+        private void OnBecameInvisible()
+        {
+            Destroy(gameObject);
         }
     }
 }

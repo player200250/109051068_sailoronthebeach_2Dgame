@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3796316050535947997}
   - component: {fileID: -8234071865180873537}
   - component: {fileID: -3955606933410934505}
+  - component: {fileID: -8781738311592769398}
   m_Layer: 9
   m_Name: enemy shoot
   m_TagString: Untagged
@@ -153,3 +154,16 @@ ConstantForce2D:
   m_Force: {x: 0, y: 0}
   m_RelativeForce: {x: 1, y: 0}
   m_Torque: 0
+--- !u!114 &-8781738311592769398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3796316050535947996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 502545987da6d6940a1b383a4b47c132, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destoryTime: 0.5
